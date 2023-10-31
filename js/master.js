@@ -6,6 +6,7 @@ const template = document.querySelector(".template");
 const confirm = document.querySelector(".confirm");
 
 btn.addEventListener("click", checkEmail);
+dismissBtn.addEventListener("click", dismissFunc);
 
 function checkEmail() {
     if (valiateEmail(userInput)) {
@@ -22,10 +23,10 @@ function checkEmail() {
     }
 }
 
-dismissBtn.addEventListener("click", (e) => {
+function dismissFunc() {
     template.style.cssText = "display:flex";
     confirm.style.cssText = "display:none";
-});
+}
 
 function valiateEmail(userInput) {
     var validReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
