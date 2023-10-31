@@ -56,11 +56,8 @@ body {
 
 /* End Global Rules */
 .template {
-    /* height: 100%; */
     display: flex;
     align-items: center;
-    /* display: none; */
-    /* justify-content: center; */
 }
 
 .template .container {
@@ -151,7 +148,6 @@ body {
 }
 
 .template .text-content .email .input {
-    /* display: none; */
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -168,20 +164,7 @@ body {
     font-size: 13px;
 }
 
-.template .text-content .email .erorr-input {
-    display: none;
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    border: 3px solid rgb(245, 182, 182);
-    font-size: var(--paragraph-size);
-    background-color: rgb(245, 182, 182);
-}
-
 /* End Error Message */
-
 .template .text-content .email .btn {
     width: 100%;
     margin-top: 20px;
@@ -219,7 +202,6 @@ body {
 }
 
 /* End Image Part */
-
 /* Start Confirmation Part */
 .confirm {
     background-color: var(--dark-slate-grey);
@@ -241,7 +223,6 @@ body {
 @media(max-width: 767px) {
     .confirm .container {
         max-width: 350px;
-        /* padding: 0px; */
     }
 }
 
@@ -259,7 +240,6 @@ body {
         font-size: 50px;
     }
 }
-
 
 .confirm .container p {
     font-size: var(--paragraph-size);
